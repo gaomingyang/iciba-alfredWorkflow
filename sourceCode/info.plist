@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>iciba</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict/>
+	<key>createdby</key>
+	<string>gaomingyang</string>
+	<key>description</key>
+	<string>通过iciba的官方接口查询单词汉意</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>爱词霸查单词</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>100</integer>
+				<key>keyword</key>
+				<string>i</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>查询中...</string>
+				<key>script</key>
+				<string>require_once('translate.php');
+
+$query = "{query}";
+$translate = new Translate();
+$translate-&gt;getMeans($query);
+
+</string>
+				<key>subtext</key>
+				<string>爱词霸查单词</string>
+				<key>title</key>
+				<string>爱词霸</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>57462619-B59D-40D0-AC99-356C5AD7ADF6</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>57462619-B59D-40D0-AC99-356C5AD7ADF6</key>
+		<dict>
+			<key>ypos</key>
+			<real>160</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>www.gaomingyang.com</string>
+</dict>
+</plist>
